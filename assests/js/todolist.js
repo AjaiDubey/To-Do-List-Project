@@ -16,6 +16,9 @@ $("input[type = 'text']").keypress(function(ev){
 
 		var ntodo = $(this).val();
 		$(this).val("");
-		$("ul").append("<li><span>x</span> " + ntodo + " </li>")
+		$("ul").append("<li><span><i class = 'fa fa-trash'></i></span> " + ntodo + " </li>")
 	}
 })
+$(".fa-plus").click(function(){
+	$("input[type = 'text']").fadeToggle();
+});
